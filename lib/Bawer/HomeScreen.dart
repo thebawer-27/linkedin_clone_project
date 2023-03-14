@@ -1,8 +1,6 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:linkedin_clone_project/Bawer/PostW.dart';
 import 'package:linkedin_clone_project/Bawer/DataMdel.dart';
 
@@ -31,7 +29,9 @@ class HomeScreen extends StatelessWidget {
         title: SizedBox(
           height: 38,
           child: TextField(
-            onTap: () {},
+            onTap: () {
+              showSearch(context: context, delegate: DataSearch());
+            },
             decoration: InputDecoration(
               filled: true,
               fillColor: Color.fromARGB(48, 158, 158, 158),
@@ -118,7 +118,7 @@ class DataSearch extends SearchDelegate<String> {
     '7ama',
   ];
 
-  final List<String> recentData = ['Bawer', 'Zinar'];
+  final List<String> recentData = ['Bawer', '7ama'];
 
   @override
   List<Widget> buildActions(BuildContext context) {
