@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:linkedin_clone_project/Bawer/PostW.dart';
+import 'package:linkedin_clone_project/Bawer/DataMdel.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -89,6 +91,20 @@ class HomeScreen extends StatelessWidget {
               onTap: () {},
             ),
           ],
+        ),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.only(top: 25),
+        child: ListView.builder(
+          itemCount: feed.length,
+          itemBuilder: (context, index) {
+            return PostsWidget(
+              av: feed[index].avatar,
+              ca: feed[index].caption,
+              po: feed[index].post,
+              us: feed[index].username,
+            );
+          },
         ),
       ),
     );
