@@ -113,19 +113,12 @@ class HomeScreen extends StatelessWidget {
 
 class DataSearch extends SearchDelegate<String> {
   final List<String> data = [
-    'Apple',
-    'Banana',
-    'Cherry',
-    'Date',
-    'Eggplant',
-    'Fig',
-    'Grape',
-    'Honeydew',
-    'Kiwi',
-    'Lemon'
+    'Bawer',
+    'Zinar',
+    '7ama',
   ];
 
-  final List<String> recentData = ['Kiwi', 'Lemon'];
+  final List<String> recentData = ['Bawer', 'Zinar'];
 
   @override
   List<Widget> buildActions(BuildContext context) {
