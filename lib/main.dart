@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:linkedin_clone_project/Bawer/HomeScreen.dart';
+import 'package:linkedin_clone_project/Bawer/Mainn.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const Dashbord(),
     );
   }
 }

@@ -1,12 +1,19 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:linkedin_clone_project/Bawer/datamodels/DataMdel.dart';
 import 'package:linkedin_clone_project/Bawer/PostW.dart';
-import 'package:linkedin_clone_project/Bawer/DataMdel.dart';
+import 'package:linkedin_clone_project/Bawer/screens/MassegsScreen.dart';
+import 'package:linkedin_clone_project/Zinar/Profile.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({Key? key}) : super(key: key);
 
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +24,6 @@ class HomeScreen extends StatelessWidget {
           child: Builder(builder: (BuildContext context) {
             return InkWell(
               onTap: () {
-                // open the side menu
                 Scaffold.of(context).openDrawer();
               },
               child: CircleAvatar(
@@ -37,12 +43,7 @@ class HomeScreen extends StatelessWidget {
               fillColor: Color.fromARGB(48, 158, 158, 158),
               prefixIcon: Icon(Icons.search),
               hintText: 'Search...',
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(15),
-                // borderSide: BorderSide(
-                //   color: Color.fromARGB(48, 158, 158, 158),
-                // ),
-              ),
+              border: InputBorder.none,
               hintStyle: TextStyle(color: Colors.black),
             ),
           ),
@@ -51,7 +52,12 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.chat),
             color: Colors.black,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Masseges()),
+              );
+            },
           ),
         ],
       ),
@@ -71,9 +77,19 @@ class HomeScreen extends StatelessWidget {
                 "johndoe@example.com",
                 style: TextStyle(color: Colors.black),
               ),
-              currentAccountPicture: CircleAvatar(
-                backgroundImage: AssetImage('assets/add-user.png'),
-              ),
+              currentAccountPicture: Builder(builder: (BuildContext context) {
+                return InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Profile()),
+                    );
+                  },
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage('assets/add-user.png'),
+                  ),
+                );
+              }),
             ),
             Divider(),
             ListTile(
