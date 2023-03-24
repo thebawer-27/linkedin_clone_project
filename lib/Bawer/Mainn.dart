@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:linkedin_clone_project/Bawer/screens/HomeScreen.dart';
+import 'package:linkedin_clone_project/shafiqa/mynetwork.dart';
 
 class Dashbord extends StatefulWidget {
   const Dashbord({super.key});
@@ -18,9 +19,7 @@ class _DashbordState extends State<Dashbord> {
   // ignore: prefer_final_fields
   List _pages = [
     HomeScreen(),
-    Center(
-      child: Text("Networks"),
-    ),
+    MyNetwork(),
     Center(
       child: Text("Posts"),
     ),
@@ -67,6 +66,7 @@ class _DashbordState extends State<Dashbord> {
                 label: 'My Networks',
                 icon: Image.asset('assets/Icons/group.png', color: Colors.grey),
                 activeIcon: Image.asset('assets/Icons/people.png'),
+                
               ),
               BottomNavigationBarItem(
                 label: 'Posts',
