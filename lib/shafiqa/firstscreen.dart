@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:linkedin_clone_project/shafiqa/mynetwork.dart';
 
 class First extends StatelessWidget {
   const First({super.key});
@@ -175,7 +176,7 @@ body: Center(
       child: Text("No invitation here",style: TextStyle(
         fontStyle: FontStyle.normal,fontSize: 20
       )),
-    )
+    ),
   ],)
 ))
     );;
@@ -251,11 +252,11 @@ OutlinedButton(
             ),
   
             
-            onPressed: (() {
+            onPressed: () {
   
-              Navigator.pop(context);
+               Navigator.push(context,MaterialPageRoute(builder: (context) => const MyNetwork(),) );
   
-            })
+            }
   
             ),
   ],)
@@ -302,11 +303,11 @@ OutlinedButton(
             ),
   
             
-            onPressed: (() {
+            onPressed: () {
   
-              Navigator.pop(context);
+               Navigator.push(context,MaterialPageRoute(builder: (context) => const MyNetwork(),) );
   
-            })
+            }
   
             ),
   ],)
@@ -353,7 +354,7 @@ OutlinedButton(
             ),
             onPressed: () {
   
-              Navigator.pop(context);
+               Navigator.push(context,MaterialPageRoute(builder: (context) => const MyNetwork(),) );
   
             }
             ),
