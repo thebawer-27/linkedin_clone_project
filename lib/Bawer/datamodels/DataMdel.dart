@@ -16,24 +16,60 @@ class Feeds {
 List<Feeds> feed = [
   Feeds(
       avatar: 'assets/add-user.png',
-      username: 'Bawer',
+      username: 'Victoria Phillips',
       caption:
           'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),
   Feeds(
       avatar: 'assets/add-user.png',
-      username: '7ama',
+      username: 'Daniel West',
       caption: 'Lorem ipsum dolor sit amet,',
       post: 'assets/Linkedin.png'),
   Feeds(
       avatar: 'assets/add-user.png',
-      username: 'Zinar',
+      username: 'Nicholas Hayes',
       caption:
           'consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),
   Feeds(
       avatar: 'assets/add-user.png',
-      username: 'Shav',
+      username: 'Samantha Jenkins',
+      caption:
+          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      post: 'assets/Linkedin.png'),
+  Feeds(
+      avatar: 'assets/add-user.png',
+      username: 'Amelia Martin',
+      caption:
+          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      post: 'assets/Linkedin.png'),
+  Feeds(
+      avatar: 'assets/add-user.png',
+      username: 'Matthew Bradley',
+      caption:
+          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      post: 'assets/Linkedin.png'),
+  Feeds(
+      avatar: 'assets/add-user.png',
+      username: 'Gabrielle Montgomery',
+      caption:
+          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      post: 'assets/Linkedin.png'),
+  Feeds(
+      avatar: 'assets/add-user.png',
+      username: 'Andrew Harrison',
+      caption:
+          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      post: 'assets/Linkedin.png'),
+  Feeds(
+      avatar: 'assets/add-user.png',
+      username: 'Isabella Martinez',
+      caption:
+          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      post: 'assets/Linkedin.png'),
+  Feeds(
+      avatar: 'assets/add-user.png',
+      username: 'William Sanders',
       caption:
           'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),
