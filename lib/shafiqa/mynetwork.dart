@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:linkedin_clone_project/shafiqa/addcontacs.dart';
 import 'package:linkedin_clone_project/shafiqa/firstscreen.dart';
 
 
@@ -35,8 +36,11 @@ Navigator.push(context, MaterialPageRoute(builder: (context) => const third()));
   
   ),SizedBox(width: 150,),
             Icon(Icons.trending_flat,color: Colors.grey,)] ),style: ElevatedButton.styleFrom(minimumSize: Size(500, 50),
-             primary: Colors.white,onPrimary: Colors.blue),)
-     ],),
+             primary: Colors.white,onPrimary: Colors.blue),),
+     ],),floatingActionButton: FloatingActionButton(onPressed: () {
+       Navigator.push(context,MaterialPageRoute(builder: (context) => const AddContacts(),) );
+       
+     },child: Icon(Icons.person_add),),
     );
       
   }
