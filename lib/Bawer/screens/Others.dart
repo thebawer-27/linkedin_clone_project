@@ -10,11 +10,15 @@ class Other extends StatelessWidget {
     return Scaffold(
       body: Container(
         color: Colors.white,
-        height: 300,
+        height: 360,
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
+              Image(
+                image: AssetImage('assets/w.jpg'),
+                height: 170,
+              ),
               const Text(
                 'No message...yet!',
                 style: TextStyle(fontSize: 30),
@@ -38,7 +42,7 @@ class Other extends StatelessWidget {
           ),
         ),
       ),
-      backgroundColor: const Color.fromARGB(165, 141, 110, 99),
+      backgroundColor: Color.fromARGB(255, 233, 230, 223),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: const Icon(Icons.open_in_new_outlined),
