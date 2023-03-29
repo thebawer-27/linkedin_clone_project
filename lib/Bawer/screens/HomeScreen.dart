@@ -5,6 +5,7 @@ import 'package:linkedin_clone_project/Bawer/datamodels/DataMdel.dart';
 import 'package:linkedin_clone_project/Bawer/PostW.dart';
 import 'package:linkedin_clone_project/Bawer/screens/MassegsScreen.dart';
 import 'package:linkedin_clone_project/Zinar/Profile.dart';
+import 'package:linkedin_clone_project/Zinar/mainz.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -83,7 +84,7 @@ class _HomeScreenState extends State {
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => Profile()),
+                        MaterialPageRoute(builder: (context) => ProfileMain()),
                       );
                     },
                     child: CircleAvatar(
