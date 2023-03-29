@@ -110,19 +110,23 @@ class _HomeScreenState extends State {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.only(top: 25),
+        padding: const EdgeInsets.only(top: 13),
         child: ListView.builder(
           itemCount: feed.length,
           itemBuilder: (context, index) {
-            return PostsWidget(
-              av: feed[index].avatar,
-              ca: feed[index].caption,
-              po: feed[index].post,
-              us: feed[index].username,
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 13),
+              child: PostsWidget(
+                av: feed[index].avatar,
+                ca: feed[index].caption,
+                po: feed[index].post,
+                us: feed[index].username,
+              ),
             );
           },
         ),
       ),
+      backgroundColor: Color.fromARGB(255, 233, 230, 223),
     );
   }
 }
