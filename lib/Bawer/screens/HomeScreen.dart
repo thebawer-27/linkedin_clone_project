@@ -61,52 +61,70 @@ class _HomeScreenState extends State {
           ),
         ],
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            UserAccountsDrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.white,
+      drawer: Container(
+        child: Drawer(
+          child: Column(
+            children: [
+              UserAccountsDrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                accountName: Text(
+                  "Bawer muhyaddin",
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.bold),
+                ),
+                accountEmail: Text(
+                  "johndoe@example.com",
+                  style: TextStyle(color: Colors.black),
+                ),
+                currentAccountPicture: Builder(builder: (BuildContext context) {
+                  return InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Profile()),
+                      );
+                    },
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage('assets/add-user.png'),
+                    ),
+                  );
+                }),
               ),
-              accountName: Text(
-                "Bawer muhyaddin",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+              Divider(),
+              ListTile(
+                title: Text(
+                  "Groups",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                onTap: () {},
               ),
-              accountEmail: Text(
-                "johndoe@example.com",
-                style: TextStyle(color: Colors.black),
+              ListTile(
+                title: Text(
+                  "Events",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                onTap: () {},
               ),
-              currentAccountPicture: Builder(builder: (BuildContext context) {
-                return InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Profile()),
-                    );
-                  },
-                  child: CircleAvatar(
-                    backgroundImage: AssetImage('assets/add-user.png'),
+              Expanded(
+                child: Align(
+                  alignment: Alignment.bottomLeft,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.settings,
+                      color: Colors.black,
+                    ),
+                    title: Text(
+                      'Settings',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
                   ),
-                );
-              }),
-            ),
-            Divider(),
-            ListTile(
-              title: Text(
-                "Groups",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              onTap: () {},
-            ),
-            ListTile(
-              title: Text(
-                "Events",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              onTap: () {},
-            ),
-          ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
       body: Padding(
