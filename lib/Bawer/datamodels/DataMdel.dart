@@ -5,71 +5,83 @@ class Feeds {
   String avatar;
   String caption;
   String post;
+  String jobs;
   Feeds({
     required this.avatar,
     required this.username,
     required this.caption,
     required this.post,
+    required this.jobs,
   });
 }
 
 List<Feeds> feed = [
   Feeds(
-      avatar: 'assets/add-user.png',
+      avatar: 'assets/ee.jpg',
       username: 'Victoria Phillips',
+      jobs: 'Product Manager',
       caption:
           'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),
   Feeds(
-      avatar: 'assets/add-user.png',
+      avatar: 'assets/e.jpg',
       username: 'Daniel West',
+      jobs: 'Technical Support Specialist',
       caption: 'Lorem ipsum dolor sit amet,',
       post: 'assets/Linkedin.png'),
   Feeds(
-      avatar: 'assets/add-user.png',
+      avatar: 'assets/ff.webp',
       username: 'Nicholas Hayes',
+      jobs: 'Solutions Architect',
       caption:
           'consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),
   Feeds(
-      avatar: 'assets/add-user.png',
+      avatar: 'assets/c.jpg',
       username: 'Samantha Jenkins',
+      jobs: 'Project Manager',
       caption:
           'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),
   Feeds(
-      avatar: 'assets/add-user.png',
+      avatar: 'assets/b.jpg',
       username: 'Amelia Martin',
+      jobs: 'Technical Writer',
       caption:
           'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),
   Feeds(
-      avatar: 'assets/add-user.png',
+      avatar: 'assets/d.jpg',
       username: 'Matthew Bradley',
+      jobs: 'Content Moderator',
       caption:
           'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),
   Feeds(
       avatar: 'assets/add-user.png',
       username: 'Gabrielle Montgomery',
+      jobs: 'Technical Consultant',
       caption:
           'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),
   Feeds(
       avatar: 'assets/add-user.png',
       username: 'Andrew Harrison',
+      jobs: 'Program Manager',
       caption:
           'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),
   Feeds(
-      avatar: 'assets/add-user.png',
+      avatar: 'assets/a.jpg',
       username: 'Isabella Martinez',
+      jobs: 'Sales Engineer',
       caption:
           'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),
   Feeds(
       avatar: 'assets/add-user.png',
       username: 'William Sanders',
+      jobs: 'IT Support Technician',
       caption:
           'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       post: 'assets/Linkedin.png'),

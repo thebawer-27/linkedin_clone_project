@@ -140,6 +140,7 @@ class _HomeScreenState extends State {
                 ca: feed[index].caption,
                 po: feed[index].post,
                 us: feed[index].username,
+                jo: feed[index].jobs,
               ),
             );
           },
