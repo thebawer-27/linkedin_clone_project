@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
@@ -59,7 +60,11 @@ class Scan extends StatelessWidget {
   
               })
   
-              ),
+              ),SizedBox(height: 200,),
+          Row(mainAxisAlignment: MainAxisAlignment.center,
+               children: [Icon(Icons.filter,color: Colors.white,),SizedBox(width: 5,),Text("Add code from gallery",style: TextStyle(
+                color: Colors.white
+              ),)],),
         ]),
       ),
     )
@@ -74,13 +79,25 @@ class Mycode extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 243, 239, 189),
-      body: Center(child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+      body: Center(
+        child: Padding(
+          padding: const EdgeInsets.only(top: 8),
+          child: Column( mainAxisAlignment: MainAxisAlignment.center, children: [
+    Container(height: 250,width: 250,color: Colors.white,
+    child: Column(children: [
+      Text("Bawer Muhyaddin",style: TextStyle(fontStyle: FontStyle.normal,fontSize: 15),),SizedBox(height: 5,)
+      ,Text("Student at university do Dohuk",style: TextStyle(fontSize: 8),),SizedBox(height: 10,),
+      Image(image: AssetImage('assets/qr.jpg'),height: 200,width: 200,),
+    ]),),
+SizedBox(height: 20,),
+      
 Row(mainAxisAlignment: MainAxisAlignment.center, children: [Icon(Icons.share),Text("Share my code")],),
 SizedBox(height: 20,),
 Row(mainAxisAlignment: MainAxisAlignment.center, children: [Icon(Icons.download),Text("Save to gallery")],)
 
 
-      ],)),
+      ],),
+        )),
     );
   }
 }
