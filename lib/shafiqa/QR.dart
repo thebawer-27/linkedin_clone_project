@@ -81,10 +81,10 @@ class Mycode extends StatelessWidget {
       backgroundColor: Color.fromARGB(255, 243, 239, 189),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.only(top: 8),
+          padding: const EdgeInsets.only(top: 15),
           child: Column( mainAxisAlignment: MainAxisAlignment.center, children: [
     Container(height: 250,width: 250,color: Colors.white,
-    child: Column(children: [
+    child: Column(children: [Padding(padding: EdgeInsets.only(top: 5)),
       Text("Bawer Muhyaddin",style: TextStyle(fontStyle: FontStyle.normal,fontSize: 15),),SizedBox(height: 5,)
       ,Text("Student at university do Dohuk",style: TextStyle(fontSize: 8),),SizedBox(height: 10,),
       Image(image: AssetImage('assets/qr.jpg'),height: 200,width: 200,),
