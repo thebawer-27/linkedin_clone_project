@@ -58,9 +58,9 @@ class _MassegesState extends State<Masseges> {
             ],
           ),
           actions: [
-            Icon(
-              Icons.filter_list_rounded,
-              color: Colors.black,
+            IconButton(
+              onPressed: null,
+              icon: Image.asset('assets/Icons/settings-sliders.png'),
             ),
             Icon(
               Icons.more_vert,

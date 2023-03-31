@@ -5,6 +5,7 @@ import 'package:linkedin_clone_project/Bawer/datamodels/DataMdel.dart';
 import 'package:linkedin_clone_project/Bawer/PostW.dart';
 import 'package:linkedin_clone_project/Bawer/screens/MassegsScreen.dart';
 import 'package:linkedin_clone_project/Zinar/Profile.dart';
+import 'package:linkedin_clone_project/Zinar/mainz.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -61,68 +62,91 @@ class _HomeScreenState extends State {
           ),
         ],
       ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            UserAccountsDrawerHeader(
-              decoration: BoxDecoration(
-                color: Colors.white,
+      drawer: Container(
+        child: Drawer(
+          child: Column(
+            children: [
+              UserAccountsDrawerHeader(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                ),
+                accountName: Text(
+                  "Bawer muhyaddin",
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.bold),
+                ),
+                accountEmail: Text(
+                  "johndoe@example.com",
+                  style: TextStyle(color: Colors.black),
+                ),
+                currentAccountPicture: Builder(builder: (BuildContext context) {
+                  return InkWell(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ProfileMain()),
+                      );
+                    },
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage('assets/add-user.png'),
+                    ),
+                  );
+                }),
               ),
-              accountName: Text(
-                "Bawer muhyaddin",
-                style:
-                    TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+              Divider(),
+              ListTile(
+                title: Text(
+                  "Groups",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                onTap: () {},
               ),
-              accountEmail: Text(
-                "johndoe@example.com",
-                style: TextStyle(color: Colors.black),
+              ListTile(
+                title: Text(
+                  "Events",
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                onTap: () {},
               ),
-              currentAccountPicture: Builder(builder: (BuildContext context) {
-                return InkWell(
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => Profile()),
-                    );
-                  },
-                  child: CircleAvatar(
-                    backgroundImage: AssetImage('assets/add-user.png'),
+              Expanded(
+                child: Align(
+                  alignment: Alignment.bottomLeft,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.settings,
+                      color: Colors.black,
+                    ),
+                    title: Text(
+                      'Settings',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
                   ),
-                );
-              }),
-            ),
-            Divider(),
-            ListTile(
-              title: Text(
-                "Groups",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              onTap: () {},
-            ),
-            ListTile(
-              title: Text(
-                "Events",
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              onTap: () {},
-            ),
-          ],
+                ),
+              )
+            ],
+          ),
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.only(top: 25),
+        padding: const EdgeInsets.only(top: 13),
         child: ListView.builder(
           itemCount: feed.length,
           itemBuilder: (context, index) {
-            return PostsWidget(
-              av: feed[index].avatar,
-              ca: feed[index].caption,
-              po: feed[index].post,
-              us: feed[index].username,
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 13),
+              child: PostsWidget(
+                av: feed[index].avatar,
+                ca: feed[index].caption,
+                po: feed[index].post,
+                us: feed[index].username,
+                jo: feed[index].jobs,
+              ),
             );
           },
         ),
       ),
+      backgroundColor: Color.fromARGB(255, 233, 230, 223),
     );
   }
 }
