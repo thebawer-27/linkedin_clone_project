@@ -66,7 +66,6 @@ class _DashbordState extends State<Dashbord> {
                 label: 'My Networks',
                 icon: Image.asset('assets/Icons/group.png', color: Colors.grey),
                 activeIcon: Image.asset('assets/Icons/people.png'),
-                
               ),
               BottomNavigationBarItem(
                 label: 'Posts',

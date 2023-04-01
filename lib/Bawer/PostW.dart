@@ -24,12 +24,15 @@ class PostsWidget extends StatelessWidget {
               Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  CircleAvatar(
-                    backgroundImage: AssetImage(
-                      av,
+                  Padding(
+                    padding: const EdgeInsets.only(top: 5, left: 5),
+                    child: CircleAvatar(
+                      backgroundImage: AssetImage(
+                        av,
+                      ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Expanded(
@@ -38,12 +41,12 @@ class PostsWidget extends StatelessWidget {
                       children: [
                         Text(
                           us,
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                        SizedBox(height: 4),
+                        const SizedBox(height: 4),
                         Text(
                           jo,
                           style: TextStyle(
@@ -51,7 +54,7 @@ class PostsWidget extends StatelessWidget {
                             fontSize: 14,
                           ),
                         ),
-                        SizedBox(height: 16),
+                        const SizedBox(height: 16),
                       ],
                     ),
                   ),
@@ -69,15 +72,15 @@ class PostsWidget extends StatelessWidget {
               ),
               Image.asset(
                 po,
-                height: 200,
+                height: 250,
                 width: double.infinity,
                 fit: BoxFit.fitWidth,
               ),
-              Divider(),
+              const Divider(),
               Row(
                 children: [
-                  Padding(
-                    padding: EdgeInsets.only(left: 25),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 18),
                   ),
                   Column(
                     children: [
@@ -94,7 +97,7 @@ class PostsWidget extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(width: 50),
+                  const SizedBox(width: 50),
                   Column(
                     children: [
                       IconButton(
@@ -110,7 +113,7 @@ class PostsWidget extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(width: 50),
+                  const SizedBox(width: 50),
                   Column(
                     children: [
                       IconButton(
@@ -126,7 +129,7 @@ class PostsWidget extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(width: 50),
+                  const SizedBox(width: 50),
                   Column(
                     children: [
                       IconButton(
@@ -147,7 +150,7 @@ class PostsWidget extends StatelessWidget {
             ],
           ),
         ),
-        Positioned(
+        const Positioned(
           top: 15,
           right: 10,
           child: Icon(Icons.more_vert),
