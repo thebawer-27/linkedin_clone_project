@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:linkedin_clone_project/Bawer/screens/HomeScreen.dart';
 import 'package:linkedin_clone_project/shafiqa/mynetwork.dart';
+import 'package:linkedin_clone_project/solin/jobs.dart';
 
 class Dashbord extends StatefulWidget {
   const Dashbord({super.key});
@@ -26,9 +27,7 @@ class _DashbordState extends State<Dashbord> {
     Center(
       child: Text("Nitfication"),
     ),
-    Center(
-      child: Text("Jobs"),
-    ),
+   jobs(),
   ];
 
   _changeTab(int index) {
@@ -83,7 +82,7 @@ class _DashbordState extends State<Dashbord> {
               ),
               BottomNavigationBarItem(
                 label: 'Jobs',
-                icon: Icon(Icons.favorite),
+                icon: Icon(Icons.work),
               ),
             ],
           ),

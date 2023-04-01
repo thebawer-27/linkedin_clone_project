@@ -73,7 +73,8 @@ class second extends StatelessWidget {
   , icon: Icon(Icons.arrow_back,color: Colors.grey,)),
   title: Text("Invitation",style: TextStyle(color: Colors.black),),titleSpacing: 50
   ,
-  ),body: Column(children: [
+  ),
+  body: Column(children: [
     TabBar(labelColor: Colors.green,unselectedLabelColor: Colors.grey,
 indicatorWeight: 3,indicatorColor: Colors.green,  indicatorSize: TabBarIndicatorSize.tab,   
  indicatorPadding: const EdgeInsets.all(2),tabs:[Tab(text: "Received",),Tab(text: "Sent",)] )
