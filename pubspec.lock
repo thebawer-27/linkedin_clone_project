@@ -16,7 +16,7 @@ packages:
       sha256: "6cfb5af12253eaf2b368f07bacc5a80d1301a071c73360d746b7f2e32d762c66"
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.1"
+    version: "2.1.0"
   characters:
     dependency: transitive
     description:
@@ -40,7 +40,7 @@ packages:
       sha256: cfc915e6923fe5ce6e153b0723c753045de46de1b4d63771530504004a45fae0
       url: "https://pub.dev"
     source: hosted
-    version: "1.17.0"
+    version: "1.16.0"
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -70,19 +70,25 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
+  flutter_plugin_android_lifecycle:
+    dependency: transitive
+    description:
+      name: flutter_plugin_android_lifecycle
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.9"
+  flutter_speed_dial:
+    dependency: "direct main"
+    description:
+      name: flutter_speed_dial
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "4.6.6"
   flutter_test:
     dependency: "direct dev"
     description: flutter
     source: sdk
     version: "0.0.0"
-  js:
-    dependency: transitive
-    description:
-      name: js
-      sha256: "5528c2f391ededb7775ec1daa69e65a2d61276f7552de2b5f7b8d34ee9fd4ab7"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.6.5"
   lints:
     dependency: transitive
     description:
@@ -123,6 +129,20 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.8.2"
+  plugin_platform_interface:
+    dependency: transitive
+    description:
+      name: plugin_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.1.4"
+  quiver:
+    dependency: transitive
+    description:
+      name: quiver
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.2.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -151,7 +171,7 @@ packages:
       sha256: "83615bee9045c1d322bbbd1ba209b7a749c2cbcdcb3fdd1df8eb488b3279c1c8"
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.1"
+    version: "2.1.0"
   string_scanner:
     dependency: transitive
     description:
@@ -186,3 +206,4 @@ packages:
     version: "2.1.4"
 sdks:
   dart: ">=2.18.6 <3.0.0"
+  flutter: ">=3.3.0"
