@@ -19,16 +19,17 @@ List<Feeds> feed = [
   Feeds(
       avatar: 'assets/ee.jpg',
       username: 'Victoria Phillips',
-      jobs: 'Product Manager',
+      jobs: 'Mobile Developer',
       caption:
-          'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      post: 'assets/Linkedin.png'),
+          "Google trends comparison between #flutter and #reactnative.So, looks Flutter seems pretty dominant in the world! Learn more: https://lnkd.in/eGGd6kw2",
+      post: 'assets/pa.jpg'),
   Feeds(
       avatar: 'assets/e.jpg',
       username: 'Daniel West',
       jobs: 'Technical Support Specialist',
-      caption: 'Lorem ipsum dolor sit amet,',
-      post: 'assets/Linkedin.png'),
+      caption:
+          'Today is all about our CUSTOMERS! We are so excited to officially offer our Customer Portal solution. Designed for both Android and IOS, Customer Portal can elevate your customer experience by streamlining order management and providing visibility to delivery statuses.We just issued a press release this morning. Check it out to learn more!: https://lnkd.in/gHqsQaf4',
+      post: 'assets/pprod.jpg'),
   Feeds(
       avatar: 'assets/ff.webp',
       username: 'Nicholas Hayes',
@@ -39,10 +40,10 @@ List<Feeds> feed = [
   Feeds(
       avatar: 'assets/c.jpg',
       username: 'Samantha Jenkins',
-      jobs: 'Project Manager',
+      jobs: 'Content Creater',
       caption:
-          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      post: 'assets/Linkedin.png'),
+          '⭐ Improving your content The other half of my media mentions have come from reporters finding me online through one of my videos. If you focus on creating valuable content for your ideal audience, the media will come to you  You can watch the full inteview here: https://lnkd.in/gWbg_Nmi',
+      post: 'assets/cc.jpg'),
   Feeds(
       avatar: 'assets/b.jpg',
       username: 'Amelia Martin',
@@ -68,9 +69,8 @@ List<Feeds> feed = [
       avatar: 'assets/add-user.png',
       username: 'Andrew Harrison',
       jobs: 'Program Manager',
-      caption:
-          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      post: 'assets/Linkedin.png'),
+      caption: 'Is this supposed to replace me?',
+      post: 'assets/pb.jpg'),
   Feeds(
       avatar: 'assets/a.jpg',
       username: 'Isabella Martinez',
