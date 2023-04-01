@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:linkedin_clone_project/shafiqa/QR.dart';
 import 'package:linkedin_clone_project/shafiqa/firstscreen.dart';
 
@@ -102,6 +103,27 @@ class MyNetwork extends StatelessWidget {
             ),
           ],
         ),
+      ),floatingActionButton: SpeedDial(
+icon: Icons.person_add,
+      activeIcon: Icons.close,
+
+        children: [
+          SpeedDialChild(onTap: () {
+            Navigator.push(context,MaterialPageRoute(builder: (context) => const Qrpage(),) );
+          },
+            child: Icon(Icons.qr_code),
+            label: 'Scan QR code',
+            foregroundColor: Colors.blue
+
+          ),
+          SpeedDialChild(onTap: () {
+            Navigator.push(context,MaterialPageRoute(builder: (context) => const MyNetwork(),) );
+          },
+            child: Icon(Icons.contacts),
+            label: 'Add contacts',
+              foregroundColor: Colors.blue
+          )
+        ],
       ),
     );
   }
