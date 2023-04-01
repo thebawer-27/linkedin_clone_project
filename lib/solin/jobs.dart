@@ -115,7 +115,7 @@ class _HomeScreenState extends State {
   ),
  ),
 
- SizedBox(height: 10,),
+ SizedBox(height: 11,),
 
  
 Center(
@@ -176,7 +176,7 @@ Center(
     
          
     
-                  child: Text('Try free for 1 month'),
+                  child: Text('Try free for 1 month '),
     
           
     
@@ -257,7 +257,9 @@ Center(
               ],
             ),
           ),
-        Center(child: Image(image: AssetImage('assets/3.jpg'),height: 220,width: 850,)),
+        Center(
+          child: Image(image: AssetImage('assets/3.jpg'),
+        height: 220,width: 850,)),
             SizedBox(height: 5,),
             Center(
               child: Text("Whant more jobs?",style: TextStyle(
@@ -266,7 +268,7 @@ Center(
             ),SizedBox(height: 19,),
         
             Center(
-              child: Text("Search ror jobs and we'll serve recommendations that match your criteria",
+              child: Text("Search ror jobs and we'll serve recommendations that match your criteria...",
                        style: TextStyle(fontStyle: FontStyle.normal,fontSize: 20),
                     ),
             ),
@@ -274,7 +276,7 @@ Center(
         Center(
           child: OutlinedButton(
             
-                  child: Text('Search jobs'),
+                  child: Text('Search Jobs'),
             
                   style: OutlinedButton.styleFrom(textStyle: TextStyle(fontSize: 30),
            
