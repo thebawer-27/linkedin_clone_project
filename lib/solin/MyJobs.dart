@@ -7,7 +7,9 @@ class MyJobs extends StatelessWidget{
 @override
  @override
   Widget build(BuildContext context){
-    return MaterialApp( home:
+    return MaterialApp( 
+    debugShowCheckedModeBanner: false,
+      home:
      Scaffold(appBar: AppBar( backgroundColor: Colors.white,
   leading: IconButton(onPressed: (() {
     Navigator.pop(context);
