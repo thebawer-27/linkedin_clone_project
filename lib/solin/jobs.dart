@@ -105,7 +105,7 @@ class _HomeScreenState extends State {
   fontWeight: FontWeight.bold,),
   
   ),
-   icon: Icon(Icons.edit_square),
+   icon: Icon(Icons.edit_calendar),
    label: Text("Post a job"),
    
    )
