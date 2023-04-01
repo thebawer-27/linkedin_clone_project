@@ -15,6 +15,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+<<<<<<< Updated upstream
   camera:
     dependency: "direct main"
     description:
@@ -50,6 +51,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.2.1+6"
+=======
+>>>>>>> Stashed changes
   characters:
     dependency: transitive
     description:
@@ -71,6 +74,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.16.0"
+<<<<<<< Updated upstream
   cross_file:
     dependency: transitive
     description:
@@ -78,6 +82,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.3.3+4"
+=======
+>>>>>>> Stashed changes
   cupertino_icons:
     dependency: "direct main"
     description:
@@ -123,6 +129,7 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+<<<<<<< Updated upstream
   flutter_web_plugins:
     dependency: transitive
     description: flutter
@@ -135,6 +142,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.4"
+=======
+>>>>>>> Stashed changes
   lints:
     dependency: transitive
     description:
@@ -210,6 +219,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+<<<<<<< Updated upstream
   stream_transform:
     dependency: transitive
     description:
@@ -217,6 +227,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+=======
+>>>>>>> Stashed changes
   string_scanner:
     dependency: transitive
     description:
