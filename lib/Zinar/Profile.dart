@@ -3,6 +3,7 @@ import 'dart:ui';
 //import 'dart:js_util';
 
 import 'package:flutter/material.dart';
+import 'package:linkedin_clone_project/Bawer/Mainn.dart';
 import 'package:linkedin_clone_project/Bawer/datamodels/DataSearchModel.dart';
 import 'package:linkedin_clone_project/Bawer/screens/HomeScreen.dart';
 
@@ -47,7 +48,7 @@ class Profile extends StatelessWidget {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => HomeScreen()),
+              MaterialPageRoute(builder: (context) => Dashbord()),
             );
           },
         ),
