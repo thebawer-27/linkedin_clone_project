@@ -33,10 +33,9 @@ List<Feeds> feed = [
   Feeds(
       avatar: 'assets/ff.webp',
       username: 'Nicholas Hayes',
-      jobs: 'Solutions Architect',
-      caption:
-          'consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      post: 'assets/Linkedin.png'),
+      jobs: 'Designer',
+      caption: 'Vote to cancel Google Meet',
+      post: 'assets/ddd.jpg'),
   Feeds(
       avatar: 'assets/c.jpg',
       username: 'Samantha Jenkins',
@@ -49,24 +48,23 @@ List<Feeds> feed = [
       username: 'Amelia Martin',
       jobs: 'Technical Writer',
       caption:
-          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      post: 'assets/Linkedin.png'),
+          '🌟 Announcing FREE AI Product Management Program for anyone impacted by the tech downturn🌟',
+      post: 'assets/ttt.jpg'),
   Feeds(
       avatar: 'assets/d.jpg',
       username: 'Matthew Bradley',
-      jobs: 'Content Moderator',
-      caption:
-          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      post: 'assets/Linkedin.png'),
+      jobs: 'flutter developer',
+      caption: 'QR Auto Login with Flutter',
+      post: 'assets/paa.jpg'),
   Feeds(
-      avatar: 'assets/add-user.png',
+      avatar: 'assets/a (4).jpg',
       username: 'Gabrielle Montgomery',
-      jobs: 'Technical Consultant',
+      jobs: 'Healthcare',
       caption:
-          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      post: 'assets/Linkedin.png'),
+          'Healthcare is changing, and you have to keep up. Dont let your organization get left behind in 2023.',
+      post: 'assets/hc.jpg'),
   Feeds(
-      avatar: 'assets/add-user.png',
+      avatar: 'assets/a (3).jpg',
       username: 'Andrew Harrison',
       jobs: 'Program Manager',
       caption: 'Is this supposed to replace me?',
@@ -76,15 +74,15 @@ List<Feeds> feed = [
       username: 'Isabella Martinez',
       jobs: 'Sales Engineer',
       caption:
-          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      post: 'assets/Linkedin.png'),
+          'Please join us in welcoming Shawn Beatty to the Securiti sales team. Shawn joins Securiti from Forcepoint where he served customers in the Minneapolis market and surrounding area. In preparation for the Securiti journey Shawn completed the',
+      post: 'assets/ss.jpg'),
   Feeds(
-      avatar: 'assets/add-user.png',
+      avatar: 'assets/a (2).jpg',
       username: 'William Sanders',
       jobs: 'IT Support Technician',
       caption:
-          'adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      post: 'assets/Linkedin.png'),
+          "Hey LinkedIn Network Community, I'm beyond happy and grateful to announce that I have officially accepted a role as Jr. IT Security Analyst at Calero! This post feels like I'm accepting an Oscar and, there are so many people in my network to thank; from my true peers",
+      post: 'assets/it.jpg'),
 ];
 
 class Massegs {

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ui';
 //import 'dart:js_util';
 
 import 'package:flutter/material.dart';
@@ -57,7 +58,7 @@ class Profile extends StatelessWidget {
                             topLeft: Radius.circular(10),
                             topRight: Radius.circular(10)),
                         image: DecorationImage(
-                            image: AssetImage('assets/bg.jpg'),
+                            image: AssetImage('assets/st.jpg'),
                             fit: BoxFit.cover)),
                   ),
                   Container(
@@ -67,7 +68,7 @@ class Profile extends StatelessWidget {
                       backgroundColor: Colors.white,
                       child: CircleAvatar(
                         radius: 70.0,
-                        backgroundImage: AssetImage('assets/Linkedin.png'),
+                        backgroundImage: AssetImage('assets/st.jpg'),
                       ),
                     ),
                   ),
@@ -98,31 +99,41 @@ class Profile extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(
-                height: 10,
-              ),
-              const Text(
-                'Zinar Barwari',
-                style: TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black),
+
+              Container(
+                padding: EdgeInsets.fromLTRB(15, 8, 0, 6),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Text(
+                      'Bawer Muhyaddin',
+                      style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black),
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          'Mobile Application Developer',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 15,
+                              color: Color.fromARGB(255, 100, 100, 100)),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
               // const SizedBox(
               //   height: 10,
               // ),
-              const Padding(
-                padding: EdgeInsets.all(8.0),
-                child: Text(
-                  'Mobile Application Developer',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      fontSize: 15, color: Color.fromARGB(255, 100, 100, 100)),
-                ),
-              ),
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
+                  //Open to
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(primary: Colors.blue[800]),
@@ -138,6 +149,7 @@ class Profile extends StatelessWidget {
                   const SizedBox(
                     width: 10,
                   ),
+                  //Add Selection
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
@@ -172,220 +184,416 @@ class Profile extends StatelessWidget {
               Divider(
                 thickness: 1,
                 height: 10,
-                color: Colors.grey[500],
+                color: Colors.white,
               ),
 
-              Column(
-                children: [
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Container(
-                        color: Colors.red,
-                        child: Column(
-                          children: [
-                            Text('Analytics'),
-                            Row(
-                              children: [
-                                Icon(Icons.remove_red_eye),
-                                Text("private to you")
-                              ],
-                            ),
-                            Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Icon(Icons.people),
-                                    Column(
-                                      children: [
-                                        Text('2 profile views'),
-                                        Text(
-                                            'Discover who is viewed your profile')
-                                      ],
-                                    )
-                                  ],
-                                ),
-                                Divider(
-                                  thickness: 1,
-                                  height: 10,
-                                  color: Colors.grey[500],
-                                ),
-                                Row(
-                                  children: [
-                                    Icon(Icons.search),
-                                    Column(
-                                      children: [
-                                        Text('4 search apperances'),
-                                        Text(
-                                            'See how often you appear in search results.')
-                                      ],
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                          ],
+              Container(
+                color: Colors.grey,
+                child: Column(
+                  children: [
+                    //Analatics
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Divider(
+                          thickness: 0,
+                          height: 10,
+                          color: Colors.grey,
                         ),
-                      )
-                    ],
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Container(
-                        color: Colors.blue,
-                        child: Column(
-                          children: [
-                            Text('Analytics'),
-                            Row(
-                              children: [
-                                Icon(Icons.remove_red_eye),
-                                Text("private to you")
-                              ],
-                            ),
-                            Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Icon(Icons.people),
-                                    Column(
-                                      children: [
-                                        Text('2 profile views'),
-                                        Text(
-                                            'Discover who is viewed your profile')
-                                      ],
-                                    )
-                                  ],
-                                ),
-                                Divider(
-                                  thickness: 1,
-                                  height: 10,
-                                  color: Colors.grey[500],
-                                ),
-                                Row(
-                                  children: [
-                                    Icon(Icons.search),
-                                    Column(
-                                      children: [
-                                        Text('4 search apperances'),
-                                        Text(
-                                            'See how often you appear in search results.')
-                                      ],
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Container(
-                        color: Colors.yellow,
-                        child: Column(
-                          children: [
-                            Text('Analytics'),
-                            Row(
-                              children: [
-                                Icon(Icons.remove_red_eye),
-                                Text("private to you")
-                              ],
-                            ),
-                            Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Icon(Icons.people),
-                                    Column(
-                                      children: [
-                                        Text('2 profile views'),
-                                        Text(
-                                            'Discover who is viewed your profile')
-                                      ],
-                                    )
-                                  ],
-                                ),
-                                Divider(
-                                  thickness: 1,
-                                  height: 10,
-                                  color: Colors.grey[500],
-                                ),
-                                Row(
-                                  children: [
-                                    Icon(Icons.search),
-                                    Column(
-                                      children: [
-                                        Text('4 search apperances'),
-                                        Text(
-                                            'See how often you appear in search results.')
-                                      ],
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Container(
-                        color: Colors.pink,
-                        child: Column(
-                          children: [
-                            Text('Analytics'),
-                            Row(
-                              children: [
-                                Icon(Icons.remove_red_eye),
-                                Text("private to you")
-                              ],
-                            ),
-                            Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Icon(Icons.people),
-                                    Column(
-                                      children: [
-                                        Text('2 profile views'),
-                                        Text(
-                                            'Discover who is viewed your profile')
-                                      ],
-                                    )
-                                  ],
-                                ),
-                                Divider(
-                                  thickness: 1,
-                                  height: 10,
-                                  color: Colors.grey[500],
-                                ),
-                                Row(
-                                  children: [
-                                    Icon(Icons.search),
-                                    Column(
-                                      children: [
-                                        Text('4 search apperances'),
-                                        Text(
-                                            'See how often you appear in search results.')
-                                      ],
-                                    )
-                                  ],
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                ],
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          color: Colors.white,
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text('Analytics',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 18)),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Icon(
+                                    Icons.remove_red_eye,
+                                    size: 16,
+                                  ),
+                                  Text("private to you")
+                                ],
+                              ),
+                              Divider(
+                                thickness: 0,
+                                height: 10,
+                                color: Colors.white,
+                              ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Icon(Icons.people),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(' profile views',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w700,
+                                                  fontSize: 15)),
+                                          Text(
+                                              ' Discover who is viewed your profile')
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                  Divider(
+                                    thickness: 1,
+                                    height: 10,
+                                    color: Colors.grey[500],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.search),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(' search apperances',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w700,
+                                                  fontSize: 15)),
+                                          Text(
+                                              ' See how often you appear in search results.')
+                                        ],
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                    Divider(
+                      thickness: 0,
+                      height: 10,
+                      color: Colors.grey,
+                    ),
+                    //About
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          color: Colors.white,
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text('About',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 18)),
+                                  IconButton(
+                                    icon: Icon(Icons.edit),
+                                    onPressed: () {},
+                                  )
+                                ],
+                              ),
+                              Divider(
+                                thickness: 0,
+                                height: 10,
+                                color: Colors.white,
+                              ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Container(
+                                            width: 350,
+                                            child: Text("Graduate of computer science with experience working across the" +
+                                                " full-stack of software development. I have built a few projects by myself and" +
+                                                " I am looking for a role where I can grow and learn from other experienced" +
+                                                " team members."),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                    Divider(
+                      thickness: 0,
+                      height: 10,
+                      color: Colors.grey,
+                    ),
+                    //Experience
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          color: Colors.white,
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text('Experience',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 18)),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.add),
+                                      Icon(Icons.edit)
+                                    ],
+                                  )
+                                ],
+                              ),
+                              Divider(
+                                thickness: 0,
+                                height: 10,
+                                color: Colors.white,
+                              ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Container(
+                                        child: const CircleAvatar(
+                                          radius: 20.0,
+                                          backgroundColor: Colors.white,
+                                          child: CircleAvatar(
+                                            radius: 20.0,
+                                            backgroundImage:
+                                                AssetImage('assets/st.jpg'),
+                                          ),
+                                        ),
+                                      ),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(' Software Programmer',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w700,
+                                                  fontSize: 15)),
+                                          Text(
+                                              ' Korek Telecom . Apprenticeship'),
+                                          Text(' Erbil/Iraq')
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                  Divider(
+                                    thickness: 1,
+                                    height: 10,
+                                    color: Colors.grey[500],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Container(
+                                        child: const CircleAvatar(
+                                          radius: 20.0,
+                                          backgroundColor: Colors.white,
+                                          child: CircleAvatar(
+                                            radius: 20.0,
+                                            backgroundImage:
+                                                AssetImage('assets/st.jpg'),
+                                          ),
+                                        ),
+                                      ),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(' Frontend Developer',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w700,
+                                                  fontSize: 15)),
+                                          Text(' Rewanga . web designer'),
+                                          Text(' Duhok/Iraq')
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                    Divider(
+                      thickness: 0,
+                      height: 10,
+                      color: Colors.grey,
+                    ),
+                    //Education
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          color: Colors.white,
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text('Education',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 18)),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.add),
+                                      Icon(Icons.edit)
+                                    ],
+                                  )
+                                ],
+                              ),
+                              Divider(
+                                thickness: 0,
+                                height: 10,
+                                color: Colors.white,
+                              ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Container(
+                                        child: const CircleAvatar(
+                                          radius: 20.0,
+                                          backgroundColor: Colors.white,
+                                          child: CircleAvatar(
+                                            radius: 20.0,
+                                            backgroundImage:
+                                                AssetImage('assets/st.jpg'),
+                                          ),
+                                        ),
+                                      ),
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(' University of Duhok',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w700,
+                                                  fontSize: 15)),
+                                          Text(
+                                              " bachelor's degree in computer science"),
+                                          Text(" 2023-2024")
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                    Divider(
+                      thickness: 0,
+                      height: 10,
+                      color: Colors.grey,
+                    ),
+                    //Skills
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          color: Colors.white,
+                          child: Column(
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text('Skills',
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w700,
+                                          fontSize: 18)),
+                                  Row(
+                                    children: [
+                                      Icon(Icons.add),
+                                      Icon(Icons.edit)
+                                    ],
+                                  )
+                                ],
+                              ),
+                              Divider(
+                                thickness: 0,
+                                height: 10,
+                                color: Colors.white,
+                              ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Column(
+                                        crossAxisAlignment:
+                                            CrossAxisAlignment.start,
+                                        children: [
+                                          Text(' Team Leadership',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w700,
+                                                  fontSize: 13)),
+                                          Divider(
+                                            thickness: 1,
+                                            height: 10,
+                                            color: Colors.grey[500],
+                                          ),
+                                          Text(' IT Service Management',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w700,
+                                                  fontSize: 13)),
+                                          Divider(
+                                            thickness: 1,
+                                            height: 10,
+                                            color: Colors.grey[500],
+                                          ),
+                                          Text(' Implimentation Support',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.w700,
+                                                  fontSize: 13)),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                    Divider(
+                      thickness: 0,
+                      height: 10,
+                      color: Colors.grey,
+                    ),
+                  ],
+                ),
               ),
             ],
           ),

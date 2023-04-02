@@ -29,7 +29,7 @@ class _HomeScreenState extends State {
                 Scaffold.of(context).openDrawer();
               },
               child: CircleAvatar(
-                backgroundImage: AssetImage('assets/add-user.png'),
+                backgroundImage: AssetImage('assets/st.jpg'),
               ),
             );
           }),
@@ -77,7 +77,7 @@ class _HomeScreenState extends State {
                       color: Colors.black, fontWeight: FontWeight.bold),
                 ),
                 accountEmail: Text(
-                  "johndoe@example.com",
+                  "bawermuhyaddin@gmail.com",
                   style: TextStyle(color: Colors.black),
                 ),
                 currentAccountPicture: Builder(builder: (BuildContext context) {
@@ -89,7 +89,7 @@ class _HomeScreenState extends State {
                       );
                     },
                     child: CircleAvatar(
-                      backgroundImage: AssetImage('assets/add-user.png'),
+                      backgroundImage: AssetImage('assets/st.jpg'),
                     ),
                   );
                 }),

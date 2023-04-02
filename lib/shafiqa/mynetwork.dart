@@ -89,7 +89,7 @@ class MyNetwork extends StatelessWidget {
                   ],
                 ),
                 SizedBox(
-                  width: 150,
+                  width: 138,
                 ),
                 Icon(
                   Icons.trending_flat,
@@ -103,30 +103,32 @@ class MyNetwork extends StatelessWidget {
             ),
           ],
         ),
-      ),floatingActionButton: SpeedDial(
-
-
-        icon: Icons.person_add,
-      activeIcon: Icons.close,
-
-        children: [
-          SpeedDialChild(onTap: () {
-            Navigator.push(context,MaterialPageRoute(builder: (context) => const Qrpage(),) );
-          },
+      ),
+      floatingActionButton:
+          SpeedDial(icon: Icons.person_add, activeIcon: Icons.close, children: [
+        SpeedDialChild(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Qrpage(),
+                  ));
+            },
             child: Icon(Icons.qr_code),
             label: 'Scan QR code',
-            foregroundColor: Colors.blue
-
-          ),
-          SpeedDialChild(onTap: () {
-            Navigator.push(context,MaterialPageRoute(builder: (context) => const MyNetwork(),) );
-          },
+            foregroundColor: Colors.blue),
+        SpeedDialChild(
+            onTap: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const MyNetwork(),
+                  ));
+            },
             child: Icon(Icons.contacts),
             label: 'Add contacts',
-              foregroundColor: Colors.blue
-          )
-        ]
-      ),
+            foregroundColor: Colors.blue)
+      ]),
     );
   }
 }
