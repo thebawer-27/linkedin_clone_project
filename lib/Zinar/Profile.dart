@@ -3,6 +3,8 @@ import 'dart:ui';
 //import 'dart:js_util';
 
 import 'package:flutter/material.dart';
+import 'package:linkedin_clone_project/Bawer/datamodels/DataSearchModel.dart';
+import 'package:linkedin_clone_project/Bawer/screens/HomeScreen.dart';
 
 import './info.dart';
 
@@ -37,6 +39,33 @@ class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          color: Colors.black,
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HomeScreen()),
+            );
+          },
+        ),
+        title: SizedBox(
+          height: 38,
+          child: TextField(
+            onTap: () {},
+            decoration: InputDecoration(
+              filled: true,
+              fillColor: Color.fromARGB(48, 158, 158, 158),
+              prefixIcon: Icon(Icons.search),
+              hintText: 'Search...',
+              border: InputBorder.none,
+              hintStyle: TextStyle(color: Colors.black),
+            ),
+          ),
+        ),
+      ),
       body: Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.start, children: [
         const SizedBox(
@@ -381,7 +410,7 @@ class Profile extends StatelessWidget {
                                           child: CircleAvatar(
                                             radius: 20.0,
                                             backgroundImage:
-                                                AssetImage('assets/st.jpg'),
+                                                AssetImage('assets/12.png'),
                                           ),
                                         ),
                                       ),
@@ -414,7 +443,7 @@ class Profile extends StatelessWidget {
                                           child: CircleAvatar(
                                             radius: 20.0,
                                             backgroundImage:
-                                                AssetImage('assets/st.jpg'),
+                                                AssetImage('assets/13.png'),
                                           ),
                                         ),
                                       ),
@@ -484,8 +513,8 @@ class Profile extends StatelessWidget {
                                           backgroundColor: Colors.white,
                                           child: CircleAvatar(
                                             radius: 20.0,
-                                            backgroundImage:
-                                                AssetImage('assets/st.jpg'),
+                                            backgroundImage: AssetImage(
+                                                'assets/uodlogo.png'),
                                           ),
                                         ),
                                       ),

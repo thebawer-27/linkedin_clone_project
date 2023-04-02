@@ -191,7 +191,7 @@ class I2 extends StatelessWidget {
                                 fontSize: 15, fontWeight: FontWeight.bold)),
                         child: Text("People (0)")),
                     SizedBox(
-                      width: 125,
+                      width: 88,
                     ),
                     ElevatedButton(
                         onPressed: () {},
@@ -204,7 +204,7 @@ class I2 extends StatelessWidget {
                                 fontSize: 15, fontWeight: FontWeight.bold)),
                         child: Text("Page (0)")),
                     SizedBox(
-                      width: 130,
+                      width: 60,
                     ),
                     ElevatedButton(
                         onPressed: () {},

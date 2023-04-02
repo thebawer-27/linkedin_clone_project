@@ -27,7 +27,7 @@ class _HomeScreenState extends State {
                   Scaffold.of(context).openDrawer();
                 },
                 child: CircleAvatar(
-                  backgroundImage: AssetImage('assets/add-user.png'),
+                  backgroundImage: AssetImage('assets/st.jpg'),
                 ),
               );
             }),
@@ -66,186 +66,151 @@ class _HomeScreenState extends State {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                child: FittedBox(
-                  child: Row(
-                    children: [
-                      TextButton.icon(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: ((context) => MyJobs())));
-                        },
-                        style: TextButton.styleFrom(
-                          primary: Colors.black45,
-                          padding: EdgeInsets.all(30),
-                          backgroundColor: Colors.white,
-                          fixedSize: Size(765, 80),
-                          textStyle: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
-                        ),
-                        icon: Icon(Icons.bookmark_border),
-                        label: Text("My jobs"),
+                child: Row(
+                  children: [
+                    TextButton.icon(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: ((context) => MyJobs())));
+                      },
+                      style: TextButton.styleFrom(
+                        primary: Colors.black45,
+                        padding: EdgeInsets.all(30),
+                        backgroundColor: Colors.white,
+                        textStyle: TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.bold),
                       ),
-                      TextButton.icon(
-                        onPressed: () {},
-                        style: TextButton.styleFrom(
-                          primary: Colors.black45,
-                          padding: EdgeInsets.all(30),
-                          backgroundColor: Colors.white,
-                          fixedSize: Size(765, 80),
-                          textStyle: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                          ),
+                      icon: Icon(Icons.bookmark_border),
+                      label: Text("My jobs"),
+                    ),
+                    TextButton.icon(
+                      onPressed: () {},
+                      style: TextButton.styleFrom(
+                        primary: Colors.black45,
+                        padding: EdgeInsets.all(30),
+                        backgroundColor: Colors.white,
+                        textStyle: TextStyle(
+                          fontSize: 25,
+                          fontWeight: FontWeight.bold,
                         ),
-                        icon: Icon(Icons.edit_calendar),
-                        label: Text("Post a job"),
-                      )
-                    ],
-                  ),
+                      ),
+                      icon: Icon(Icons.edit_calendar),
+                      label: Text("Post a job"),
+                    )
+                  ],
                 ),
               ),
               SizedBox(
                 height: 11,
               ),
-              Center(
-                child: FittedBox(
-                  child: Container(
-                    color: Colors.white,
-                    width: 204,
-                    height: 100,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+              Container(
+                height: 100,
+                color: Colors.white,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    CircleAvatar(
+                      backgroundImage: AssetImage('assets/st.jpg'),
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Row(
-                          children: [
-                            Center(
-                              child: Container(
-                                child: FittedBox(
-                                  child: CircleAvatar(
-                                    backgroundImage:
-                                        AssetImage('assets/add-user.png'),
-                                    radius: 40,
-                                  ),
-                                ),
-                              ),
-                            ),
-                            Column(
-                              children: [
-                                Container(
-                                    child: Text(
-                                  "Try Premium to see jobs where you would be a top application",
-                                  style: TextStyle(
-                                      fontStyle: FontStyle.normal,
-                                      fontSize: 30),
-                                )),
-                                SizedBox(
-                                  height: 5,
-                                ),
-                                ElevatedButton(
-                                    child: Text('Try free for 1 month '),
-                                    style: ElevatedButton.styleFrom(
-                                        textStyle: TextStyle(
-                                            fontSize: 30, color: Colors.black),
-                                        padding: const EdgeInsets.all(12.0),
-                                        primary:
-                                            Color.fromARGB(255, 164, 126, 12),
-                                        shape: RoundedRectangleBorder(
-                                            borderRadius:
-                                                BorderRadius.circular(20))),
-                                    onPressed: () {}),
-                              ],
-                            ),
-                            SizedBox(
-                              width: 1055,
-                            ),
-                            Icon(
-                              Icons.keyboard_control,
-                              size: 30,
-                            )
-                          ],
+                        Text(
+                          "Try Premium to see jobs where you would be a top application",
+                          style: TextStyle(fontSize: 10),
                         ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        ElevatedButton(
+                            child: Text('Try free for 1 month '),
+                            style: ElevatedButton.styleFrom(
+                                textStyle: TextStyle(
+                                    fontSize: 10, color: Colors.black),
+                                padding: const EdgeInsets.all(12.0),
+                                primary: Color.fromARGB(255, 164, 126, 12),
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20))),
+                            onPressed: () {}),
                       ],
                     ),
-                  ),
+                    SizedBox(width: 20),
+                    Icon(Icons.more_vert),
+                  ],
                 ),
               ),
               SizedBox(
                 height: 10,
               ),
               Center(
-                child: FittedBox(
-                  child: Container(
-                      width: 2040,
-                      height: 400,
-                      color: Colors.white,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          FittedBox(
-                            child: Column(
-                              children: [
-                                Text(
-                                  'Recommended for you',
-                                  style: TextStyle(
-                                    fontStyle: FontStyle.normal,
-                                    fontSize: 30,
-                                    color: Colors.black,
-                                  ),
+                child: Container(
+                    color: Colors.white,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        FittedBox(
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                'Recommended for you',
+                                style: TextStyle(
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 25,
+                                  color: Colors.black,
                                 ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
-                          Center(
-                              child: Image(
-                            image: AssetImage('assets/3.jpg'),
-                            height: 220,
-                            width: 850,
-                          )),
-                          SizedBox(
-                            height: 5,
+                        ),
+                        Center(
+                            child: Image(
+                          image: AssetImage('assets/3.jpg'),
+                          height: 220,
+                        )),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Center(
+                          child: Text(
+                            "Whant more jobs?",
+                            style: TextStyle(
+                                fontStyle: FontStyle.normal, fontSize: 25),
                           ),
-                          Center(
-                            child: Text(
-                              "Whant more jobs?",
-                              style: TextStyle(
-                                  fontStyle: FontStyle.normal, fontSize: 25),
-                            ),
+                        ),
+                        SizedBox(
+                          height: 19,
+                        ),
+                        Center(
+                          child: Text(
+                            "Search for jobs and we'll serve recommendations that match your criteria...",
+                            style: TextStyle(
+                                fontStyle: FontStyle.normal, fontSize: 20),
                           ),
-                          SizedBox(
-                            height: 19,
-                          ),
-                          Center(
-                            child: Text(
-                              "Search ror jobs and we'll serve recommendations that match your criteria...",
-                              style: TextStyle(
-                                  fontStyle: FontStyle.normal, fontSize: 20),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 10,
-                          ),
-                          Center(
-                            child: OutlinedButton(
-                                child: Text('Search Jobs'),
-                                style: OutlinedButton.styleFrom(
-                                    textStyle: TextStyle(fontSize: 30),
-                                    primary: Colors.blue,
-                                    shape: RoundedRectangleBorder(
-                                        borderRadius:
-                                            BorderRadius.circular(20))),
-                                onPressed: () {
-                                  Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => SearchJobs(),
-                                      ));
-                                }),
-                          ),
-                        ],
-                      )),
-                ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Center(
+                          child: OutlinedButton(
+                              child: Text('Search Jobs'),
+                              style: OutlinedButton.styleFrom(
+                                  textStyle: TextStyle(fontSize: 30),
+                                  primary: Colors.blue,
+                                  shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(20))),
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => SearchJobs(),
+                                    ));
+                              }),
+                        ),
+                      ],
+                    )),
               )
             ],
           ),
