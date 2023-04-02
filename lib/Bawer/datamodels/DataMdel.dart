@@ -100,21 +100,15 @@ class Massegs {
 
 List<Massegs> massege = [
   Massegs(
-      avatar: 'assets/add-user.png',
-      username: 'Bawer',
+      avatar: 'assets/a (2).jpg',
+      username: 'William Sanders',
       mass:
-          'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          "Hi Bawer,My name is Christin Smith, and I'm an Enrollment Services Manager at the University of Arizona Global Campus.",
       time: 'Fri'),
   Massegs(
-      avatar: 'assets/add-user.png',
-      username: 'Bawer',
+      avatar: 'assets/a.jpg',
+      username: 'Isabella Martinez',
       mass:
-          'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      time: 'Fri'),
-  Massegs(
-      avatar: 'assets/add-user.png',
-      username: 'Bawer',
-      mass:
-          'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+          "Hi Bawer,Here's a tip for quickly and easily finding a role that works for you. Set up job alerts to get mobile or email notifications for every new opening that matches your search criteria.",
       time: 'Fri'),
 ];
